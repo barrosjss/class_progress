@@ -1,21 +1,14 @@
 import { Card, CardContent, Typography } from "@mui/material";
-import "./App.css";
+import "./theme/App.css";
+
 import CurrentDate from "./components/CurrentDate";
+import SheetList from "./components/SheetList";
 
 function App() {
   return (
     <>
       <CurrentDate />
-      <Card className="card">
-        <CardContent>
-          <Typography variant="h5" component="div">
-            Nombre
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Subnombre
-          </Typography>
-        </CardContent>
-      </Card>
+      <SheetList />
     </>
   );
 }
