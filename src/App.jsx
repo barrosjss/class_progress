@@ -1,11 +1,13 @@
-import { Card, CardContent, Typography } from "@mui/material";
-import "./App.css";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 import CurrentDate from "./components/CurrentDate";
+import ProgressBar from "./components/ProgressBar";
 
 function App() {
   return (
     <>
-      <CurrentDate />
+     <Box sx={{padding: '0 1pc', width: '91%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+     <CurrentDate />
+      <ProgressBar />
       <Card className="card">
         <CardContent>
           <Typography variant="h5" component="div">
@@ -16,6 +18,7 @@ function App() {
           </Typography>
         </CardContent>
       </Card>
+     </Box>
     </>
   );
 }
